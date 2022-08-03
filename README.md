@@ -65,6 +65,13 @@ git commit -m “[descriptive message]”
 ###### commit your staged content as a new commit snapshot
 #
 #
+### APPLY EXECUTABLE FILE
+> Add exutable permission to the git file
+```bash
+git update-index --chmod=+x [file]
+```
+#
+#
 ### BRANCH & MERGE
 > Isolating work in branches, changing context, and integrating changes
 ```bash
@@ -220,6 +227,7 @@ git stash drop
 #
 #
 __GitHub__ Education
+_EbenGitHub_ 
 
 
 
