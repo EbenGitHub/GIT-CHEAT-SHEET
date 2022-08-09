@@ -44,6 +44,12 @@ git add [file]
 ```
 ###### add a file as it looks now to your next commit (stage)
 #
+_or_
+```bash
+git add --chmod=+x [file]
+```
+###### add a file as it looks now to your next commit (stage) with execution permission
+#
 ```bash
 git reset [file]
 ```
