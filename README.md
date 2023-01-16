@@ -137,6 +137,11 @@ git log branchB..branchA
 ```bash
 git log --follow [file]
 ```
+###### get short summary of log informations
+#
+```bash
+git log --oneline --graph --decorate --all
+```
 ###### show the commits that changed file, even across renames
 #
 ```bash
