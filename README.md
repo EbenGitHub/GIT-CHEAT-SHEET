@@ -142,8 +142,9 @@ git log --follow [file]
 ```bash
 git log --oneline --graph --decorate --all
 ```
-> HEAD -- our local branch head
-> origin/master  --  remote tracker
+> MASTER -- our local branch head
+#
+> ORIGIN/MASTER  --  remote tracker
 ###### get details of log informations
 #
 ```bash
