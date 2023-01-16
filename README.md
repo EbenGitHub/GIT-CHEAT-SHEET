@@ -24,6 +24,22 @@ git config --global color.ui auto
 ```bash
 git init
 ```
+###### adding remote repository to your local
+#
+```bash
+git remote add <shorthand-name> <HTTP_url>
+git remote add origin https://github.com/EbenGitHub/FantasticProject.git
+```
+###### to check the remote repository and path
+#
+```bash
+git remote 
+```
+###### to check the remote repository and full path
+#
+```bash
+git remote -v
+```
 ###### initialize an existing directory as a Git repository
 #
 ```bash
