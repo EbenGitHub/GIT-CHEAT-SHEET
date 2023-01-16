@@ -142,6 +142,11 @@ git log --follow [file]
 ```bash
 git log --oneline --graph --decorate --all
 ```
+###### get details of log informations
+#
+```bash
+git log --stat
+```
 ###### show the commits that changed file, even across renames
 #
 ```bash
@@ -208,11 +213,37 @@ git merge [alias]/[branch]
 #
 ```bash
 git push [alias] [branch]
+git push <remote-shortname> <branch>
+git push origin master
 ```
 ###### Transmit local branch commits to the remote repository branch
 #
 ```bash
 git pull
+git pull <remote-shortname> <branch>
+git pull origin master
+```
+> If you don't want to automatically merge the local branch with the tracking branch then you wouldn't use `git pull` you would use a different command called `git fetch`. 
+> You might want to do this if there are commits on the repository that you don't have but there are also commits on the local repository that the remote one doesn't have either.
+> Git fetch is used to retrieve commits from a remote repository's branch but it does not automatically merge the local branch with the remote tracking branch after those commits have been received.
+###### fetch commits from remote to local without merging to our branch
+#
+```bash
+git fetch
+git fetch <remote-shortname> <branch>
+git fetch origin master
+```
+###### to merge changes of commits fetched to our branch
+#
+```bash
+git merge <remote-shortname>/<branch>
+git merge origin/master
+```
+###### push merged changes to our remote repository
+#
+```bash
+git push <remote-shortname> <branch>
+git push origin master
 ```
 ###### fetch and merge any commits from the tracking remote branch
 #
