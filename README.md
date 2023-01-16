@@ -150,6 +150,42 @@ git log --oneline --graph --decorate --all
 ```bash
 git log --stat
 ```
+###### to see how many commits each contributor has added to the repository
+#
+```bash
+git shortlog
+```
+> `git shortlog` displays an alphabetical list of names and the commit messages that go along with them. 
+> If we just want to see just the number of commits that each developer has made, we can add a couple of flags: 
+> * `-s` to show just the number of commits (rather than each commit's message) and 
+> * `-n` to sort them numerically (rather than alphabetically by author name).
+```bash
+git shortlog -s -n
+```
+> Another way that we can display all of the commits by an author is to use the regular `git log` command but include the `--author` flag to filter the commits to the provided author.
+```bash
+git log --author=<author_name>
+git log --author=Surma
+```
+> Eg. if there are two Surma authors with different last name, `git log --author=Surma` will show commits of both authors
+> If we want to be more specific, we can do:
+```bash
+git log --author="<first_name> <last_name>"
+git log --author="Surma Lewis"
+```
+###### get details information about a commit
+#
+```bash
+git show <COMMIT_ID>
+git show 5966b66
+```
+###### filtering commits by information in the current message or description area.
+#
+```bash
+git log --grep=bug
+git log --grep bug
+git log --grep="unit tests"
+```
 ###### show the commits that changed file, even across renames
 #
 ```bash
