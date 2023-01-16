@@ -248,6 +248,17 @@ git push origin master
 ###### fetch and merge any commits from the tracking remote branch
 #
 #
+### Forking a Repository
+> Fork a repository that means you duplicate it
+> Typically you fork a repository that belongs to someone else. 
+> So you make an identical copy of their repository and that duplicate copy now belongs to you.
+> This concept of `forking` is also different from `cloning`. 
+> When you clone a repository, you get an identical copy of the repository. 
+> But cloning happens on your local machine and you clone a remote repository. 
+> When you fork a repository, a new duplicate copy of the remote repository is created. 
+> This new copy is also a remote repository, but it now belongs to you.
+#
+#
 ### REWRITE HISTORY
 > Rewriting branches, updating commits and clearing history
 ```bash
