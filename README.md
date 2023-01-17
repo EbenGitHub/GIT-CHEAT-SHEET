@@ -39,6 +39,13 @@ git remote add upstream https://github.com/EbenGitHub/FantasticProject.git
 > If we are working on in a project that is someone else, and we fork git to our github repository, and clone it to our local computer. 
 > Our local clone will refer to our forked repository as `origin`. `git remote add origin https://github.com/EbenGitHub/FantasticProject.git`
 > We can also connect our local clone to the original source repository and it will be refered as `upstream`. `git remote add upstream https://github.com/EbenGitHub/FantasticProject.git`
+###### to change the remote repository name
+#
+```bash
+git remote rename <old_name> <new_name>
+git remote rename origin mine
+git remote rename upstream source
+```
 ###### to check the remote repository and path
 #
 ```bash
@@ -305,6 +312,41 @@ git push origin master
 > But cloning happens on your local machine and you clone a remote repository. 
 > When you fork a repository, a new duplicate copy of the remote repository is created. 
 > This new copy is also a remote repository, but it now belongs to you.
+###### to connect to our forked repository
+#
+```bash
+git remote add origin <url_forked_repo>
+```
+###### to pull changes from source repository not forked repository
+#
+```bash
+git fetch origin master
+```
+###### to connect to the original source repository
+#
+```bash
+git remote add upstream <url_source_repo>
+```
+###### to pull changes from source repository not forked repository
+#
+```bash
+git fetch upstream master
+```
+###### to merge changes from source repository and push to our forked repository
+#
+```bash
+git checkout master
+git merge upstream/master
+git push origin master
+```
+> `upstream/master` - keep track of where the source repository's master branch is.
+> `origin/master` - keep track of where the forked (our) repository's master branch is.
+###### to fetch changes and merge them into the master branch
+#
+```bash
+git pull origin master
+git pull upstream master
+```
 #
 #
 ### REWRITE HISTORY
