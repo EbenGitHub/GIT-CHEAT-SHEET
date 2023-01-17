@@ -354,6 +354,17 @@ git pull upstream master
 ```bash
 git rebase [branch]
 ```
+###### combine the last three commits into one
+#
+```bash
+git rebase -i HEAD~3
+```
+> `HEAD~2`, `HEAD~1`, and `HEAD` will merge to one.
+> `HEAD` indicates your current location (it could point to several things, but typically it'll either point to a branch name or directly to a commit's SHA). 
+> `~3` part means "three before", so `HEAD~3` will be the commit that's three before the one you're currently on
+> `HEAD~3` will be referenced as a base, but it won't be merged.
+> `-i` means interactively
+> We're using this relative reference to a commit in the `git rebase` command.
 ###### apply any commits of current branch ahead of specified one
 #
 ```bash
