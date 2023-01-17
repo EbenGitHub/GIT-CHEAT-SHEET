@@ -30,6 +30,15 @@ git init
 git remote add <shorthand-name> <HTTP_url>
 git remote add origin https://github.com/EbenGitHub/FantasticProject.git
 ```
+###### adding source repository to your local
+#
+```bash
+git remote add <shorthand-name> <HTTP_url>
+git remote add upstream https://github.com/EbenGitHub/FantasticProject.git
+```
+> If we are working on in a project that is someone else, and we fork git to our github repository, and clone it to our local computer. 
+> Our local clone will refer to our forked repository as `origin`. `git remote add origin https://github.com/EbenGitHub/FantasticProject.git`
+> We can also connect our local clone to the original source repository and it will be refered as `upstream`. `git remote add upstream https://github.com/EbenGitHub/FantasticProject.git`
 ###### to check the remote repository and path
 #
 ```bash
