@@ -365,6 +365,9 @@ git rebase -i HEAD~3
 > `HEAD~3` will be referenced as a base, but it won't be merged.
 > `-i` means interactively
 > We're using this relative reference to a commit in the `git rebase` command.
+#
+> don't forget to forcefully push changes to githun. otherwise github won't accept pushes to prevent commit deletion. `git push -f`
+> I recommend that you create a `backup` branch before rebasing, so that it's easy to return to your previous state. If you're happy with the rebase, then you can just delete the backup branch!
 ###### apply any commits of current branch ahead of specified one
 #
 ```bash
