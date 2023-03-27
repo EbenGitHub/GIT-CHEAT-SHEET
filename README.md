@@ -138,6 +138,19 @@ git log
 ###### show all commits in the current branch’s history
 #
 #
+### UNDOING & RESETING
+> undo git adds and git commits
+```bash 
+git restore -S ./
+```
+###### undo git add
+#
+```bash
+git reset --soft HEAD~
+```
+###### undo git commit
+#
+#
 ### INSPECT & COMPARE
 > Examining logs, diffs and object information
 ```bash 
